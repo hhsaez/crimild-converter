@@ -4,7 +4,9 @@ Crimild Conversion Tool
 Cloning
 -------
 
+```
  git clone <URL> --recursive
+```
 
 Requirements
 ------------
@@ -14,13 +16,21 @@ Requirements
 
 Building
 --------
+
+```
  cmake .
+```
+
+```
  make clean all -j4
+```
 
 Usage
 -----
 
- ./crimild-converter input=<INPUT_FILE> [output=<OUTPUT_FILE>]
+```
+ ./crimild-converter input="PATH/TO/INPUT" [output="PATH/TO/OUTPUT"]
+```
 
 * input: Path to input file (i.e. "modes/model.obj")
 * ouput: (optional) Path to output file (default "scene.crimild")
