@@ -50,7 +50,7 @@ SharedPointer< Node > convert( std::string inputFile, std::string outputFile )
 void printUsage( void )
 {
 	std::cout << "\nUsage: "
-			  << "\n\t./crimild-converter input=<INPUT_FILE> [ouput=<OUTPUT_FILE>]"
+			  << "\n\t./crimild-converter input=<INPUT_FILE> [output=<OUTPUT_FILE>]"
 			  << "\n\n";
 }
 
@@ -68,7 +68,7 @@ int main( int argc, char **argv )
     	return -1;
     }
 
-    std::string outputPath = settings->get< std::string >( "ouput", "scene.crimild" );
+    std::string outputPath = settings->get< std::string >( "output", "scene.crimild" );
 
     auto convertedModel = convert( inputPath, outputPath );
     if ( convertedModel == nullptr ) {
